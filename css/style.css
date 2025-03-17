@@ -127,7 +127,9 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
-/* versione tablet */
+  
+ /* versione tablet */
+
 /* regola da 768px in giù*/
 
 @media screen and (max-width: 768px) {
@@ -137,9 +139,66 @@ img {
      margin-bottom: 3rem;
      font-size: 2.5rem;
 }
+
 .container{
     display: inline;
     width: 50%;
+    margin: 15px 50px;
+}
+.lessons .container  .col{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+
+   .steps .container  .col{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+
+   .why-us .container .row {
+    padding-left:  30px;
+    padding-right:  30px;
+   }
 }
 
+
+     /* versione mobile */
+
+ /* regola da 480px in giù */
+ @media screen and (max-width: 480px){
+   .row{
+    display: block;
+   }
+   .row > .col{
+    width: 100%;
+   }
+
+   .lessons .container  .col{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+   .lessons .container  .col{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
+
+
+   .steps .container  .col{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+   .steps .container  .col{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
+
+   .why-us .container .col{
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+   .why-us .container .col{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
 }
+ 
