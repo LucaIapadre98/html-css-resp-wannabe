@@ -136,29 +136,64 @@ img {
 
 .site-header{
      text-align: center;
-     margin-bottom: 3rem;
+     margin-bottom: 0;
      font-size: 2.5rem;
 }
 
-.container{
-    display: inline;
-    width: 50%;
+.lessons .container{
+    min-width: 100%;
     margin: 15px 50px;
+}
+.lessons .container h2{
+  text-align: left;
+  padding-left: 160px;
+}
+.lessons .container .row{
+  display: flex;
+  width: calc(100% / 2);
+  padding-left: 50px;
 }
 .lessons .container  .col{
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.steps h2{
+  text-align: left;
+  padding-left: 240px;
+}
+
+.steps .container  .col{
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 65%;
+    flex-wrap: wrap;
+   }
+   .steps .container .row{
+    display: flex;
+    width: calc(100% / 3);
    }
 
-   .steps .container  .col{
-    padding-left: 30px;
-    padding-right: 30px;
+ .why-us .container h2{
+  text-align: left;
+  padding-left: 190px;
+ }
+
+  .why-us .container{
+    padding: 30px 0;
+  }
+
+  .why-us .container .row {
+    display: flex;
+    width: calc(100% / 2);
+    margin-left: 40px;
    }
 
-   .why-us .container .row {
-    padding-left:  30px;
-    padding-right:  30px;
+   .why-us .container .col{
+    min-width: 50%;
+    flex-wrap: wrap;
    }
+   
 }
 
 
@@ -166,39 +201,81 @@ img {
 
  /* regola da 480px in giù */
  @media screen and (max-width: 480px){
-   .row{
-    display: block;
-   }
-   .row > .col{
+  html{
+    overflow-x: hidden;
+  }
+  body{
     width: 100%;
-   }
+    
+  }
 
-   .lessons .container  .col{
-    padding-left: 30px;
-    padding-right: 30px;
-   }
-   .lessons .container  .col{
-    margin-top: 80px;
-    margin-bottom: 80px;
-   }
+  .site-header .text-center{
+    text-align: center;
+  }
 
+  .lessons .container{
+    width: 100%;
+    margin: 0;
+  }
+  .lessons .container h2{
+    padding-left: 70px;
+  }
 
-   .steps .container  .col{
-    padding-left: 30px;
-    padding-right: 30px;
-   }
-   .steps .container  .col{
-    margin-top: 80px;
-    margin-bottom: 80px;
-   }
-
-   .why-us .container .col{
-    padding-left: 30px;
-    padding-right: 30px;
-   }
-   .why-us .container .col{
-    margin-top: 80px;
-    margin-bottom: 80px;
-   }
+  .lessons .container .row {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+  .lessons .container .col{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .steps{
+    margin: 0;
+  }
+  .steps .text-center{
+    margin: 0;
+  }
+  .steps .container{
+    width: 100%;
+    margin: 0;
+  }
+  .steps .container h2{
+    padding-left: 120px;
+  }
+  .steps .container .row {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+.steps .container .col{
+  width: 100%;
+  margin-top: 50px;
 }
+.why-us{
+  background-color: black;
+}
+.why-us{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.why-us .container{
+  width: 100%;
+  margin: 0;
+}
+.why-us .container h2{
+  padding-left: 140px;
+  text-align: left;
+}
+.why-us .container .row {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+.why-us .container .col{
+  width: 85%;
+  margin-top: 50px;
+}
+  }
  
